@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="main-title">SPLI<br />TTER</h1>
+      <div class="app">
+        <div class="app-container">
+          <div class="app-tips">
+            <div class="calc-container">
+              <form id="formTips" class="form-container">
+                <div class="field-group">
+                  <label for="bill" class="title">Bill </label>
+                  <div>
+                    <input
+                      id="bill"
+                      class="field bill-field"
+                      type="number"
+                      placeholder="0"
+                      tabindex="1"
+                    />
+                  </div>
+                </div>
+
+                <div class="options">
+                  <label class="select-tip" for="selectTip">Select Tip %</label>
+                  <div id="tipOptions" class="tip-options">
+                    <input
+                      id="tip1"
+                      class="field-tip"
+                      type="radio"
+                      name="tip"
+                      value="5"
+                    />
+                    <label class="text-tip" for="tip1" tabindex="2">5% </label>
+
+                    <input
+                      id="tip2"
+                      class="field-tip"
+                      type="radio"
+                      name="tip"
+                      value="10"
+                    />
+                    <label class="text-tip" for="tip2" tabindex="3">10%</label>
+
+                    <input
+                      id="tip3"
+                      class="field-tip"
+                      type="radio"
+                      name="tip"
+                      value="15"
+                    />
+                    <label class="text-tip" for="tip3" tabindex="4">15%</label>
+
+                    <input
+                      id="tip4"
+                      class="field-tip"
+                      type="radio"
+                      name="tip"
+                      value="25"
+                    />
+                    <label class="text-tip" for="tip4" tabindex="5">25%</label>
+
+                    <input
+                      id="tip5"
+                      class="field-tip"
+                      type="radio"
+                      name="tip"
+                      value="50"
+                    />
+                    <label class="text-tip" for="tip5" tabindex="6">50%</label>
+
+                    <input
+                      id="custom"
+                      class="field-tip-custom"
+                      type="number"
+                      name="tip"
+                      placeholder="Custom"
+                      value=""
+                      tabindex="7"
+                    />
+                  </div>
+                </div>
+
+                <div class="people-container">
+                  <label for="people" class="title"
+                    >Number of People
+                    <span class="error hidden">Can't be zero</span>
+                  </label>
+
+                  <div>
+                    <input
+                      id="people"
+                      class="field people-field"
+                      type="number"
+                      placeholder="0"
+                      tabindex="8"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="result-container">
+              <div class="result-content-row">
+                <div class="result-content">
+                  <h2 class="result-content-title">Tip Amount</h2>
+                  <p class="result-content-description">
+                    <span class="slash">/</span>person
+                  </p>
+                </div>
+                <p id="tipAmount" class="result-amount"><span>$</span>0.00</p>
+              </div>
+
+              <div class="result-content-row">
+                <div class="result-content">
+                  <h2 class="result-content-title">Total</h2>
+                  <p class="result-content-description">
+                    <span class="slash">/</span>person
+                  </p>
+                </div>
+                <p id="tipTotal" class="result-amount"><span>$</span>0.00</p>
+              </div>
+              <div class="btn-container">
+                <button id="btnReset" class="btn-reset" tabindex="9">
+                  Reset
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      <span> Challenge by</span>
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/leoxr">Leoxr</a><span>.</span>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
